@@ -1,15 +1,15 @@
 # Site settings
 title: iamjrp
-description: 'A Thinker, Innovator, Enthusiastic Software Developer, Amateur sketch maker, Recreational Singer, Thought Leader. Sometimes clumsy. :-)'
+description: 'A Thinker, Innovator, Enthusiastic Software Developer, Amateur sketch maker, Recreational Singer, Thought leader and Sometimes clumsy. :-)'
 url: 'https://jrphub.github.io/'
-baseurl: '/'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
   name: 'Jyoti Ranjan Pattnaik'
   email: mailme@iamjrp.com
-# twitter_username: joshgerdes
+# twitter_username: jrp
   facebook_username: jrpattnaik
   github_username:  jrphub
   linkedin_username:  iamjrp
@@ -24,7 +24,7 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 10
+paginate: 20
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
