@@ -3,7 +3,7 @@ title: iamjrp
 description: 'A Thinker, Innovator, Enthusiastic Software Developer, Amateur sketch maker, Recreational Singer, Thought leader and Sometimes clumsy. :-)'
 url: 'https://jrphub.github.io/'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-111388814-1'
 disqus_shortname: 'iamjrp'
 
 author:
