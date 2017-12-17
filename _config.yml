@@ -4,7 +4,7 @@ description: 'A Thinker, Innovator, Enthusiastic Software Developer, Amateur ske
 url: 'https://jrphub.github.io/'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+disqus_shortname: 'iamjrp'
 
 author:
   name: 'Jyoti Ranjan Pattnaik'
