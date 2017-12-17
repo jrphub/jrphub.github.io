@@ -1,7 +1,7 @@
 ---
 title:  "Installing Oozie 4.3.0 on Hadoop 2.7.3"
 date:   2017-10-15 11:30:23
-categories: [hadoop]
+categories: [Hadoop]
 tags: [oozie]
 ---
 This weekend, I tried to configure oozie 4.3.0 and wanted to do some hands on submitting hadoop jobs to oozie. While installing oozie and to make it up, I struggled a lot with errors. So I thought to blog about it.
