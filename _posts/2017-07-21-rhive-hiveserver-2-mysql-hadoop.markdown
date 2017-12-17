@@ -1,5 +1,5 @@
 ---
-title:  "Configuring Hadoop cluster(Pseudo-distributed, single machine) for remote accessing using Hiveserver2 and Rhive"
+title:  "17 - Configuring Hadoop cluster(Pseudo-distributed, single machine) for remote accessing using Hiveserver2 and Rhive"
 date:   2017-07-21 11:30:23
 categories: [Hadoop]
 tags: [hive]

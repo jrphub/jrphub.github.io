@@ -1,5 +1,5 @@
 ---
-title:  "Installing and configuring Postgres"
+title:  "12 - Installing and configuring Postgres"
 date:   2017-05-10 11:30:23
 categories: [Development]
 tags: [sql]

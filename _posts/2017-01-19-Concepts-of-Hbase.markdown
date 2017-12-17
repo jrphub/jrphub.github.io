@@ -1,6 +1,6 @@
 ---
-title:  "Concepts of HBase"
-date:   2017-07-10 11:30:23
+title:  "07 - Concepts of HBase"
+date:   2017-01-19 11:30:23
 categories: [Hadoop]
 tags: [hbase]
 --- 

@@ -1,5 +1,5 @@
 ---
-title:  "Remote Connection : To reconnect existing session using xrdp"
+title:  "13 - Remote Connection : To reconnect existing session using xrdp"
 date:   2017-06-06 11:30:23
 categories: [Others]
 tags: [others]

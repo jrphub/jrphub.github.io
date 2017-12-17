@@ -1,5 +1,5 @@
 ---
-title:  "Singleton Design Pattern in Java"
+title:  "04 - Singleton Design Pattern in Java"
 date:   2016-11-11 11:30:23
 categories: [Java]
 tags: [programming]

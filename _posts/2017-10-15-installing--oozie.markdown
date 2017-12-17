@@ -1,5 +1,5 @@
 ---
-title:  "Installing Oozie 4.3.0 on Hadoop 2.7.3"
+title:  "20 - Installing Oozie 4.3.0 on Hadoop 2.7.3"
 date:   2017-10-15 11:30:23
 categories: [Hadoop]
 tags: [oozie]

@@ -1,5 +1,5 @@
 ---
-title:  "Learning Git"
+title:  "08 - Learning Git"
 date:   2017-01-26 11:30:23
 categories: [Development]
 tags: [git]

@@ -1,5 +1,5 @@
 ---
-title:  "Inner Class in Java"
+title:  "06 - Inner Class in Java"
 date:   2017-01-14 11:30:23
 categories: [Java]
 tags: [programming]
