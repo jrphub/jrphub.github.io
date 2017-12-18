@@ -32,7 +32,7 @@ In this post we will discuss about using SVN on Command Line.
 
 codes to explain the status:
 
-![status code](http://i.imgur.com/KYTyxEg.png)
+![status code](https://i.imgur.com/KYTyxEg.png)
 
 **Add** - To add new file
 
@@ -54,7 +54,7 @@ To commit specific files:
 **Resolve** - After "svn update", the command "svn status" shows the conflicted files with status code " C". These files need to be resolved before committing.
  The conflicted files look like this:
  
-![conflicted file](http://i.imgur.com/h4P5um4.png)
+![conflicted file](https://i.imgur.com/h4P5um4.png)
 
 Resolve the conflict, remove ASCII art notations, when you are ready, run 
 
@@ -158,7 +158,7 @@ To verify any revision is corrupt or not:
 
 **Shortcuts**
 
-![shortcuts svn](http://i.imgur.com/osZtfhA.png)
+![shortcuts svn](https://i.imgur.com/osZtfhA.png)
 
 **Cheatsheets**
 

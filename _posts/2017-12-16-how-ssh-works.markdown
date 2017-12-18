@@ -34,7 +34,7 @@ Let's go step by step:
 
 This identity is a rsa public key of the server and it is mostly located in /etc/ssh directory .
 
-![rsa pub key](http://i.imgur.com/r6Q1tNs.png)
+![rsa pub key](https://i.imgur.com/r6Q1tNs.png)
 
 if the client is communicating with server for the first time, the client will get the warning like this:
 
@@ -49,7 +49,7 @@ After the first connection, this host (server) identity key will be saved in a f
 
 This key is generated each and every hour according to default configuration, mentioned in ssh configuration file (/etc/ssh/sshd_config)
 
-![server-key generation](http://i.imgur.com/ZmbwHtm.png)
+![server-key generation](https://i.imgur.com/ZmbwHtm.png)
 
  - Check bytes
 8 random bytes which are also called checkbytes. It is necessary for the client to send these bytes in its reply to the server, during its next reply.
@@ -77,7 +77,7 @@ The client authentication happens over this encrypted channel. There are multipl
 
 **Public Key Authentication**: (Strongest)
 	1. Client needs to create private (id_rsa) and public (id_rsa.pub) key by doing ssh-keygen
-				![ssh-keygen](http://i.imgur.com/YGu1O8z.png)
+				![ssh-keygen](https://i.imgur.com/YGu1O8z.png)
 	2. Share public key with the server(s) by adding the content of id_rsa.pub file to the **server side authorized_keys** file. This authorized_key file should be present in .ssh directory of server.
 	3. Server on receiving public key authentication request , will first generate a random 256 bit string as a challenge for the client, and encrypt it with the client public key, which is inside the authorized_keys file.
 	4. The client on receiving the challenge, will decrypt it with the private key(id_rsa).

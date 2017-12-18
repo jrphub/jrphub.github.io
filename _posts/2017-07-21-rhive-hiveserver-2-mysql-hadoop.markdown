@@ -191,7 +191,7 @@ select * from TBLS;
 
 On your mysql, you will see something like below
 
-![hive-mysql](http://i.imgur.com/LhaTIuh.png  "hive-msql")
+![hive-mysql](https://i.imgur.com/LhaTIuh.png  "hive-msql")
 
 Exit from previous hive session and got $HIVE_HOME/bin and run hiveserver2
 

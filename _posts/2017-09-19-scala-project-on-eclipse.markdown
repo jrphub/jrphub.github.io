@@ -19,7 +19,7 @@ Download from here (http://scala-ide.org/download/sdk.html)
 
 Open eclipse ide -> Go to Help -> Eclipse Market Place -> Search "scala ide" as shown in image below
 
-![img](http://i.imgur.com/GV7S5Fj.png)
+![img](https://i.imgur.com/GV7S5Fj.png)
 
 Click on "install" corresponding "Scala IDE" in search result and install the plugin.
 
@@ -141,7 +141,7 @@ sudo apt-get install sbt
 
 5. Right click on src/main/scala -> new -> scala object
 
-   ![img](http://i.imgur.com/sZSgmjI.png)
+   ![img](https://i.imgur.com/sZSgmjI.png)
 
 6. Create input-dirdirectory in the root of project directory in eclipse  and put one text file 
 

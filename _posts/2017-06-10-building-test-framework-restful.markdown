@@ -86,7 +86,7 @@ Jersey 2.x
 
 This is one good image explaining Servlet invocation in web application.
 
-![enter image description here](http://i.imgur.com/aVJdrER.png)
+![enter image description here](https://i.imgur.com/aVJdrER.png)
 
 From the above picture, we understand all request/response are handled through servlet container. [Jersey Test framework](https://jersey.java.net/documentation/latest/test-framework.html) provides similar container (grizzly, in-memory, jdk, simple, jetty, external) for integration testing. Jersey Test also provides pre-configured client to access deployed application. We will use these concepts building our test framework for Restful web Application.
 
