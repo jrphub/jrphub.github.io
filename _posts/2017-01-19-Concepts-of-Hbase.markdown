@@ -146,7 +146,7 @@ So how does HBase recover the MemStore updates not persisted to HFiles?
 2. Slow complex crash recovery
 3. Major Compaction I/O storms
 
-#### Basic Commands
+Basic Commands
 
 ```shell
 $ ./bin/hbase shell

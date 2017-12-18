@@ -11,11 +11,11 @@ Two ways
 
 ### IDE Setup
 
-#### Using Scala IDE :
+Using Scala IDE :
 
 Download from here (http://scala-ide.org/download/sdk.html)
 
-#### Using Scala IDE as plugin in Existing Eclipse IDE
+Using Scala IDE as plugin in Existing Eclipse IDE
 
 Open eclipse ide -> Go to Help -> Eclipse Market Place -> Search "scala ide" as shown in image below
 
@@ -29,13 +29,13 @@ Now you can create Scala Project inside Eclipse IDE
 
 ### Installing SBT
 
-#### On Windows
+On Windows
 
 Download **zip file**  and **msi installer** mentioned here() http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Windows.html)
 
 Using msi installer, install SBT on windows
 
-#### On Linux
+On Linux
 
 Follow the instruction mentioned here() http://www.scala-sbt.org/0.13/docs/Installing-sbt-on-Linux.html)
 
@@ -172,7 +172,7 @@ sudo apt-get install sbt
 
 8. Right click on the file and run as -> scala application 
 
-#### To run through terminal
+To run through terminal
 
 1. Go to project directory in terminal and run "sbt" like this
 
@@ -211,7 +211,7 @@ sudo apt-get install sbt
    ```
 
 
-####  To submit the application
+To submit the application
 
 
    ```

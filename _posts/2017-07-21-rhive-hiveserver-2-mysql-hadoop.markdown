@@ -6,7 +6,7 @@ tags: [hive]
 ---
 Assuming machine "R" wants to connect to machine "H" using Rhive.
 
-####Pre-requisites
+Pre-requisites
 1. Hadoop and Hive should be configured in machine R
 2. RHive is installed and configured in machine R
 3. Hadoop should be configured in machine H
@@ -14,7 +14,7 @@ Assuming machine "R" wants to connect to machine "H" using Rhive.
 
 *Hadoop and hive versions should be compatible in both the machines*
 
-####Setting up Machine H to allow request from machine R
+Setting up Machine H to allow request from machine R
 Machine R will try to access machine H using rhive, which needs hadoop and hive configured and running behind. Machine H has hadoop and hive configured and hiveserver2 running. 
 
 Steps Involved:

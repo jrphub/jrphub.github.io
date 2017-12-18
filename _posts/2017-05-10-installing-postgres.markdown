@@ -55,7 +55,7 @@ It will throw error like this
 
 
 So, to set up the connection between two, we need to follow two steps:
-####1. Modify pg_hba.conf to add Client Authentication Record
+1. Modify pg_hba.conf to add Client Authentication Record
 
 As we are using host based authentication, we need to change pg_hba.conf file like below
 
@@ -72,14 +72,14 @@ change the line for localhost like below
     host all all 127.0.0.1/32 trust
 
 
-####2. Change the Listen Address in postgresql.conf of server machine
+2. Change the Listen Address in postgresql.conf of server machine
 
-1. open postgresql.conf 
+a. open postgresql.conf 
 
     sudo vi /etc/postgresql/9.3/main/postgresql.conf
 
 
-2. uncomment **listen_address** and change the value from 'localhost' to '*'
+b. uncomment **listen_address** and change the value from 'localhost' to '*'
 
 Now restart the server
 
