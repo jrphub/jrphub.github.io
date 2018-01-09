@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Sitemap: http://jrphub.github.io/sitemap.xml
