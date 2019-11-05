@@ -40,7 +40,7 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
