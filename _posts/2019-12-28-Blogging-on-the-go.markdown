@@ -11,10 +11,25 @@ Gradually, I lost interest in this whole process and didn't write any article fo
 Here is the approach, I followed on my android mobile.
 
 Step 1 - install MGit from playstore
+
 Step 2 - clone your repository to MGit
+
 Step 3 - Install markdown editor (I am using JotterPad)
+
 Step 4 - Navigate to _posts directory in your github pages local repo
+
 Step 5 - Create markdown file and write
-Step 6 - go to MGit and commit-push your new file
+
+Step 6 - go to MGit setting and add name and email
+
+Step 6 - go inside MGit repo and click on toggle drawer at the right top corner, click on add all to stage
+
+Step 8 - click on the commit, put commit comment
+
+Step 9 - click on push and fill up github credentials
+
+Step 10 - check your blog on the browser
+
+NB : While writing next article, first git pull using MGit, then write using markdown editor
 
 Done :)
