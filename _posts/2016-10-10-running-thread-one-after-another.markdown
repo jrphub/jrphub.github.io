@@ -53,8 +53,7 @@ public class FirstThread implements Runnable {
 		}
 		try {
 			Thread.sleep(5000);
-			System.out
-					.println("We can take rest before starting Second thread");
+			System.out.println("We can take rest before starting Second thread");
 		} catch (final InterruptedException e) {
 			e.printStackTrace();
 			System.out.println("In exception First Thread");
@@ -81,8 +80,7 @@ public class SecondThread implements Runnable {
 	@Override
 	public void run() {
 		System.out.println(" In Second Thread : START");
-		System.out
-				.println(" Second thread is waiting for 1st thread to terminate");
+		System.out.println(" Second thread is waiting for 1st thread to terminate");
 		/*
 		 * The above two lines can run before First Thread stops, but the code
 		 * below join() will be processed after 1st thread stops executing

@@ -118,9 +118,10 @@ class Emp {
 			}
 		};
 		/*
-		 * Behind the screen - A class is created but its name is decided by the
-		 * compiler which extends the Person class and provides the
-		 * implementation of the eat() method.
+		 * Behind the screen - A class is created but its name 
+		 * is decided by the
+		 * compiler which extends the Person class and provides
+		 * the implementation of the eat() method.
 		 */
 
 		p.eat();

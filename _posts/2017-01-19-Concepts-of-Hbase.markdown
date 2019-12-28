@@ -3,36 +3,37 @@ title:  "07 - Concepts of HBase"
 date:   2017-01-19 11:30:23
 categories: [Hadoop]
 tags: [hbase]
---- 
+---
+
 **Introduction**
 
 HBase is Open Source, Distributed, Versioned, Non-Relational, column-oriented Database, built on top of Hadoop File System, Horizontally Scalable, fault-tolerant and has easy Java API for client access.
 
 It has below basic components. We will discuss one by one.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig1.png)
+![img](https://i.imgur.com/FBQgDWD.png)
 
 Region assignment, DDL (create, delete tables) operations are handled by the HBase Master process (HMaster). 
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig3.png)
+![img](https://i.imgur.com/Fi2PG25.png)
 
 Region servers serve data for reads and writes. When accessing data, clients communicate with HBase RegionServers directly.
 
 HBase Tables are divided horizontally by row key range into “Regions.” A region contains all rows in the table between the region’s start key and end key. Regions are assigned to the nodes in the cluster, called “Region Servers,” and these serve data for reads and writes. A region server can serve about 1,000 regions.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig2.png)
+![img](https://i.imgur.com/WhZ05sx.png)
 
 Zookeeper, which is part of HDFS, maintains a live cluster state and provides server failure notification. 
 
 The ZooKeeper maintains ephemeral nodes for active sessions via heartbeats.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig4.png)
+![img](https://i.imgur.com/g321t7S.png)
 
 Each Region Server creates an ephemeral node. The HMaster monitors these nodes to discover available region servers, and it also monitors these nodes for server failures. HMasters compete with each other to create an ephemeral node. Zookeeper determines the first one and uses it to make sure that only one master is active. The active HMaster sends heartbeats to Zookeeper, and the inactive HMaster listens for notifications of the active HMaster failure.
 
 If a region server or the active HMaster fails to send a heartbeat, the session is expired and the corresponding ephemeral node is deleted. Listeners for updates will be notified of the deleted nodes. The active HMaster listens for region servers, and will recover region servers on failure. The Inactive HMaster listens for active HMaster failure, and if an active HMaster fails, the inactive HMaster becomes active.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig5.png)
+![img](https://i.imgur.com/Vgx06G2.png)
 
 There is a special HBase Catalog table called the META table, which holds the location of the regions in the cluster. ZooKeeper stores the location of the .META. table.
 
@@ -44,7 +45,7 @@ This is what happens the first time a client reads or writes to HBase:
 
 For future reads, the client uses the cache to retrieve the META location and previously read row keys. Over time, it does not need to query the META table, unless there is a miss because a region has moved; then it will re-query and update the cache.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig6.png)
+![img](https://i.imgur.com/9dWK8mR.png)
 
 **HBase Meta Table**
 
@@ -58,7 +59,7 @@ For future reads, the client uses the cache to retrieve the META location and pr
 
   \- Values: RegionServer
 
-  ![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig7.png)
+  ![img](https://i.imgur.com/cha9Nde.png)
 
 **Region Server Components**
 
@@ -69,7 +70,7 @@ A Region Server runs on an HDFS data node and has the following components:
 - MemStore: is the write cache. It stores new data which has not yet been written to disk. It is sorted by key before writing to disk. There is one MemStore per column family per region.
 - Hfiles store the rows as sorted KeyValues on disk.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig8.png)
+![img](https://i.imgur.com/s49B2eg.png)
 
 **HBase Write**
 
@@ -78,7 +79,7 @@ When the client issues a Put request
 1. write the data to the write-ahead log, Edits are appended to the end of the WAL file that is stored on disk
 2. Then it is placed in the MemStore and the put request acknowledgement returns to the client.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig10.png)
+    ![img](https://i.imgur.com/mRjhNqP.png)
 
 **HBase Region Flush**
 
@@ -88,7 +89,7 @@ Note that this is one reason why there is a limit to the number of column famili
 
 The highest sequence number is stored as a meta field in each HFile, to reflect where persisting has ended and where to continue. On region startup, the sequence number is read, and the highest is used as the sequence number for new edits.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig12.png)
+![img](https://i.imgur.com/h6LvZd6.png)
 
 **HBase HFile Structure**
 
@@ -102,17 +103,17 @@ An HFile contains a multi-layered index which allows HBase to seek to the data w
 
 The trailer points to the meta blocks, and is written at the end of persisting the data to the file. The trailer also has information like bloom filters and time range info. **Bloom filters** help to skip files that do not contain a certain row key. The time range info is useful for skipping the file if it is not in the time range the read is looking for.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig14.png)
+![img](https://i.imgur.com/FgT0Gd6.png)
 
 **HFile Index**
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig15.png)
+![img](https://i.imgur.com/Uxn0D2n.png)
 
 **HBase Read Merge**
 
 We have seen that the KeyValue cells corresponding to one row can be in multiple places, row cells already persisted are in Hfiles, recently updated cells are in the MemStore, and recently read cells are in the Block cache. So when you read a row, how does the system get the corresponding cells to return? 
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig16.png)
+![img](https://i.imgur.com/xdMRgj7.png)
 
 As discussed earlier, there may be many HFiles per MemStore, which means for a read, multiple files may have to be examined, which can affect the performance. This is called read amplification.
 
@@ -124,21 +125,21 @@ Major compactions can be scheduled to run automatically. Due to write amplificat
 
 **Regions**
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig20.png)
+![img](https://i.imgur.com/4fzYvoR.png)
 
 Initially there is one region per table. When a region grows too large, it splits into two child regions. 
 
 Then the split is reported to the HMaster. For load balancing reasons, the HMaster may schedule for new regions to be moved off to other servers.
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig22.png)
+![img](https://i.imgur.com/pNrHggk.png)
 
 All writes and Reads are to/from the primary node. HDFS replicates the WAL and HFile blocks. HFile block replication happens automatically. HBase relies on HDFS to provide the data safety as it stores its files
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig23.png)
+![img](https://i.imgur.com/sDDEipd.png)
 
 So how does HBase recover the MemStore updates not persisted to HFiles?
 
-![img](https://www.mapr.com/sites/default/files/blogimages/HBaseArchitecture-Blog-Fig25.png)
+![img](https://i.imgur.com/tGXhSth.png)
 
 **Problems in HBase**
 

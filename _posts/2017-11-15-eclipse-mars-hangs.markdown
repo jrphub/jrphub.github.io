@@ -8,9 +8,7 @@ While creating a project, eclipse hangs. But the project directory get created. 
 
 This is known issue explained 
 
-[here]: https://bugs.eclipse.org/bugs/show_bug.cgi?id=495946
-
-here
+[here]: https://bugs.eclipse.org/bugs/show_bug.cgi?id=495946	"bug-eclipse"
 
 Solution:
 

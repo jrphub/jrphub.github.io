@@ -6,7 +6,7 @@ tags: [java]
 ---
 Current Java version: 
 
-```
+```shell
 jrp@iamjrp:~$ java -version
 
 java version "1.7.0_95"

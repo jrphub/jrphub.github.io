@@ -172,8 +172,8 @@ vi conf/oozie-site.xml
 Add below property
 
 ```xml
-<property>          <name>oozie.service.HadoopAccessorService.hadoop.
-configurations</name> 
+<property>          
+    <name>oozie.service.HadoopAccessorService.hadoop.configurations</name> 
 	<value>*=/usr/local/hadoop/etc/hadoop/</value>
 </property>
 ```

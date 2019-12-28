@@ -214,7 +214,7 @@ To run through terminal
 To submit the application
 
 
-   ```
+   ```shell
 
 cd $SPARK_HOME/bin
 ./spark-submit --class "com.spark.practice.MainApp" --master local[4] /home/jrp/workspace_1/SimpleApp/target/scala-2.11/simpleapp_2.11-1.0.jar

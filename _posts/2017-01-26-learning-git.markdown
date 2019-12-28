@@ -49,7 +49,7 @@ You are ready to make changes now.
 
 **Overal Flow**
 
-![enter image description here](https://s32.postimg.org/a4d12yl2d/git_basic.png "git flow")
+![flow](https://s32.postimg.org/a4d12yl2d/git_basic.png)
 
 **Let's know a bit more about the flow ...**
 

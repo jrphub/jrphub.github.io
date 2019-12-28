@@ -168,7 +168,7 @@ Now we are done with configuration in machine H
 
 Let's create a hive table
 
-```shell
+```sql
 hive> create table hduser_test(id int, name string);
 ```
 
@@ -176,7 +176,7 @@ hive> create table hduser_test(id int, name string);
 In MySQL
 
 
-```shell
+```sql
 mysql -u root -p
 Enter password:                                                             
 mysql> use metastore;

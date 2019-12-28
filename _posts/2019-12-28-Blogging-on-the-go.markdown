@@ -10,11 +10,11 @@ Gradually, I lost interest in this whole process and didn't write any article fo
 
 Here is the approach, I followed on my android mobile.
 
-Step 1 - install MGit from playstore
+Step 1 - install **MGit** from playstore
 
 Step 2 - clone your repository to MGit
 
-Step 3 - Install markdown editor (I am using JotterPad)
+Step 3 - Install markdown editor (I am using **JotterPad**)
 
 Step 4 - Navigate to _posts directory in your github pages local repo
 
