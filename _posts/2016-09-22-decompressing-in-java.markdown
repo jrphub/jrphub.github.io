@@ -53,15 +53,16 @@ public class DecompressZipFileOnly {
                 File f = null;
                 ArrayList fileList=new ArrayList();
                 while (files.hasMoreElements()) {
-                    ZipEntry entry = (ZipEntry) files.nextElement();
+                    ZipEntry entry = 
+                        (ZipEntry) files.nextElement();
                     System.out.println("Entry: " +entry);
 
                     InputStream eis = zf.getInputStream(entry);
                     byte[] buffer = new byte[1024];
                     int bytesRead = 0;
 
-                    f = new File(unzipLocation +
-							File.separator + entry.getName());
+                    f = new File(unzipLocation + File.separator
+                                 + entry.getName());
                     fileList.add(f);
                     f.createNewFile();
 
