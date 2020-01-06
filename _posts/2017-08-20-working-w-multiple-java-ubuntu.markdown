@@ -7,7 +7,7 @@ reading_time: 2 min
 ---
 Current Java version: 
 
-```shell
+```java
 jrp@iamjrp:~$ java -version
 
 java version "1.7.0_95"
@@ -26,7 +26,7 @@ Ans. No. Apt-get won't overwrite the existing java versions.
 
 Cool, Then let's install Java 8
 
-```shell
+```java
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
@@ -34,7 +34,7 @@ sudo apt-get install oracle-java8-installer
 
 To List all Java Versions (A)
 
-```shell
+```java
 jrp@iamjrp:~$ update-java-alternatives --list
 java-1.7.0-openjdk-amd64       1071       /usr/lib/jvm/java-1.7.0-openjdk-amd64
 java-8-oracle                  1081       /usr/lib/jvm/java-8-oracle
@@ -44,13 +44,13 @@ Q. Though I have installed Java 8, while using Java 8, JAVA_HOME will point to J
 
 Ans. Add this to .bashrc file
 
-```shell
+```java
 export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"
 ```
 
 Also add these aliases
 
-```shell
+```java
 alias useJava8='yes | sudo update-java-alternatives --set /usr/lib/jvm/java-8-oracle && source ~/.bashrc'
 alias useJava7='yes | sudo update-java-alternatives --set /usr/lib/jvm/java-1.7.0-openjdk-amd64 && source ~/.bashrc'
 ```
@@ -63,7 +63,7 @@ After saving .bashrc file, do
 
 Now let's check
 
-```shell
+```java
 jrp@iamjrp:~$ java -version
 java version "1.8.0_121"
 Java(TM) SE Runtime Environment (build 1.8.0_121-b13)

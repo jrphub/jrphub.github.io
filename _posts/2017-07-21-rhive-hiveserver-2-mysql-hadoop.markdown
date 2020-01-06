@@ -66,11 +66,11 @@ After above changes, restart hadoop cluster in machine H
 
 Create a directory called rhive in hdfs and assign all permission to it
 
-```shell
+```java
 hadoop fs -mkdir /rhive
 ```
 
-```shell
+```java
 hadoop fs -chmod -R 777 /rhive
 ```
 
@@ -87,7 +87,7 @@ if it gives error
 
 Then add defaultFS to connect using rhive like below
 
-```shell
+```java
 rhive.connect("172.28.2.168", 10000, hiveServer2=TRUE, user="hduser", defaultFS="hdfs://172.28.2.168:54310")
 ```
 
@@ -112,7 +112,7 @@ For this we have to configure remote metastore with mysql (preferably) in machin
 
 4. Create the Initial database schema using the hive-schema-&lt;version&gt;mysql.sql file located in the $HIVE_HOME/scripts/metastore/upgrade/mysql directory.
 
-   ```shell
+   ```java
     $ mysql -u root -p
     Enter password:
     mysql> CREATE DATABASE metastore;
@@ -123,7 +123,7 @@ For this we have to configure remote metastore with mysql (preferably) in machin
 5. Create a MySQL user account for Hive to use to access the metastore.
 
       mysql> CREATE USER 'hduser'@'%' IDENTIFIED BY 'hivepassword'; 
-      ```shell
+      ```java
       mysql> GRANT all on *.* to 'hduser'@localhost identified by 'hivepassword';
       mysql>  flush privileges;
       ```
@@ -197,7 +197,7 @@ On your mysql, you will see something like below
 Exit from previous hive session and got $HIVE_HOME/bin and run hiveserver2
 
 
-```shell
+```java
 $ hiveserver2
 ```
 

@@ -18,14 +18,14 @@ This weekend, I tried to configure oozie 4.3.0 and wanted to do some hands on su
 
 Get oozie tar.gz file from http://www-eu.apache.org/dist/oozie/4.3.0/ and extract it
 
-```shell
+```java
 cd $HOME
 tar -xvf oozie-4.3.0.tar.gz
 ```
 
 **Step2: Build Oozie**
 
-```shell
+```java
 cd $HOME/oozie-4.3.0/bin
 ./mkdistro.sh -DskipTests
 ```
@@ -35,7 +35,7 @@ cd $HOME/oozie-4.3.0/bin
 
 Copy the built binaries to the home directory as ‘oozie’
 
-```shell
+```java
 cd $HOME
 cp -R $HOME/oozie-4.3.0/distro/target/oozie-4.3.0-distro/oozie-4.3.0 .
 ```
@@ -44,7 +44,7 @@ cp -R $HOME/oozie-4.3.0/distro/target/oozie-4.3.0-distro/oozie-4.3.0 .
 
  Create libext directory inside oozie directory
 
-```shell
+```java
  cd $HOME/oozie
  mkdir libext
 ```
@@ -66,7 +66,7 @@ Now you need to put hadoop jars inside libext directory, else it will throw belo
 
 So, let's put below jars inside libext directory
 
-```shell
+```java
 cp $HADOOP_HOME/share/hadoop/common/*.jar oozie/libext/
 cp $HADOOP_HOME/share/hadoop/common/lib/*.jar oozie/libext/
 cp $HADOOP_HOME/share/hadoop/hdfs/*.jar oozie/libext/
@@ -111,7 +111,7 @@ Note : You can use * in all values, in case of confusion
 
 **Step 3.3: Prepare the war**
 
-```shell
+```java
 cd $HOME/oozie/bin
 ./oozie-setup.sh prepare-war
 ```
@@ -129,7 +129,7 @@ Why? because, The oozie compilation produced Hadoop 2.6.0 jars even when specify
 So, to avoid this error, 
 copy the oozie.war file to a different directory
 
-```shell
+```java
 mkdir $HOME/oozie_war_dir
 cp $HOME/oozie/oozie.war $HOME/oozie_war_dir
 cd $HOME/oozie_war_dir
@@ -143,14 +143,14 @@ cp oozie.war $HOME/oozie/
 
 Then, regenerate the oozie.war binaries for oozie with a prepare-war
 
-```shell
+```java
 cd $HOME/oozie/bin
 ./oozie-setup.sh prepare-war
 ```
 
 **Step 3.4: Create sharelib on HDFS**
 
-```shell
+```java
 cd $HOME/oozie/bin
 ./oozie-setup.sh sharelib create -fs hdfs://localhost:9000
 ```
@@ -165,7 +165,7 @@ Now, this sharelib set up may give you below error:
 
 To avoid this, modify oozie-site.xml like below
 
-```shell
+```java
 cd $HOME/oozie
 vi conf/oozie-site.xml
 ```
@@ -183,40 +183,40 @@ The value should be your $HADOOP_HOME/etc/hadoop, where all hadoop configuration
 
 **Step 3.5 : Create Oozie DB**
 
-```shell
+```java
 cd $HOME/oozie
 ./bin/ooziedb.sh create -sqlfile oozie.sql -run
 ```
 **Step 3.6 : Start Daemon**
 To start Oozie as a daemon use the following command:
 
-```shell
+```java
 ./bin/oozied.sh start
 ```
 
 To stop
 
-```shell
+```java
 ./bin/oozied.sh stop
 ```
 check logs for errors, if any
 
-```shell
+```java
 cd $HOME/oozie/logs
 tail -100f oozie.log
 ```
 Use the following command to check the status of Oozie from command line:
 
-```shell
+```java
 $ ./bin/oozie admin -oozie http://localhost:11000/oozie -status
 ```
 
-```shell
+```java
 System mode: NORMAL
 ```
 **Step 4: Client Installation**
 
-```shell
+```java
 $ cd
 $ cp oozie/oozie-client-4.3.0.tar.gz .
 $ tar -xvf oozie-client-4.3.0.tar.gz
@@ -225,7 +225,7 @@ $ cd bin
 ```
 Add $HOME/oozie-client/bin to PATH variable in .bashrc file and restart your terminal or do
 
-```shell
+```java
 source $HOME/.bashrc
 ```
 
@@ -248,14 +248,14 @@ You may face below error while running the map reduce example in above URL
 
 Start mr-jobhistory-server.sh
 
-```shell
+```java
 cd $HADOOP_HOME/sbin
 ./mr-jobhistory-server.sh start historyserver
 ```
 
 Another point to note about modifying job.properties file is :
 
-```shell
+```java
 nameNode=hdfs://localhost:9000
 jobTracker=localhost:8032
 ```

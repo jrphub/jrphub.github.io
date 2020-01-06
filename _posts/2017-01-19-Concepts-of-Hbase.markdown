@@ -150,7 +150,7 @@ So how does HBase recover the MemStore updates not persisted to HFiles?
 
 Basic Commands
 
-```shell
+```java
 $ ./bin/hbase shell
 hbase(main):001:0> create 'test', 'cf'
 hbase(main):002:0> list 'test'
@@ -185,7 +185,7 @@ Distributed Cluster Demo Architecture:
 
 node-b
 
-```shell
+```java
 $ jps
 15930 HRegionServer
 16194 Jps
@@ -205,7 +205,7 @@ Limits on Number of Files and Processes (ulimit -n) : 1024, can be raised more, 
 
 Each ColumnFamily has at least one StoreFile, and possibly more than six StoreFiles if the region is under load.
 
-```shell
+```java
 Potential Number of Open Files = (StoreFiles per ColumnFamily) x (regions per RegionServer)
 ```
 
@@ -225,12 +225,12 @@ A new column qualifier (column_family:column_qualifier) can be added to an exist
 
 A namespace is a logical grouping of tables analogous to a database in relation database systems. A namespace can be created, removed or altered.
 
-```shell
+```java
 #Create a namespace
 create_namespace 'my_ns'
 ```
 
-```shell
+```java
 #create my_table in my_ns namespace
 create 'my_ns:my_table', 'fam'
 #drop namespace
@@ -244,7 +244,7 @@ There are two predefined special namespaces:
 - hbase - system namespace, used to contain HBase internal tables
 - default - tables with no explicit specified namespace will automatically fall into this namespace
 
-```shell
+```java
 #namespace=foo and table qualifier=bar
 create 'foo:bar', 'fam'
 

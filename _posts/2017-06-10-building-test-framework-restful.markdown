@@ -26,7 +26,7 @@ Let's start from basic a bit...
 
 To create a maven-jersey2-spring4- REST application
 
-```shell
+```java
 mvn archetype:generate 
 -DarchetypeArtifactId=jersey-quickstart-grizzly2 
 -DarchetypeGroupId=org.glassfish.jersey.archetypes 
@@ -39,7 +39,7 @@ mvn archetype:generate
 
 To create a maven-jersey2-spring4- REST **WEB** application
 
-```shell
+```java
 mvn archetype:generate 
 -DarchetypeArtifactId=jersey-quickstart-webapp 
 -DarchetypeGroupId=org.glassfish.jersey.archetypes 
@@ -435,7 +435,7 @@ Add below in your pom.xml
 
 Here, I have enabled, parallel processing of unit test cases up to 10, skipped integration test cases as we are targeting only unit test case in this goal.
 
-```shell
+```java
 mvn test
 ```
 

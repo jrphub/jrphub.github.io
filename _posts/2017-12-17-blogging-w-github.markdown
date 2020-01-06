@@ -21,7 +21,7 @@ Install Ruby-Dev : `sudo apt-get install ruby-dev` (we will need it for ffi inst
 
 Clone the theme to a local directory :
 
-```shell
+```java
 git clone https://github.com/joshgerdes/jekyll-uno.git
 
 cd jekyll-uno/
@@ -36,7 +36,7 @@ if "ffi" installation is failing , then
 
 if nokogiri 1.8.0 installation is failing, then
 
-```shell
+```java
 sudo apt-get update
 
 sudo apt-get install libxml2-dev
@@ -104,7 +104,7 @@ linkedin_username: linkedin-id
 
 Then, it's time to push your changes to github, but to your repository
 
-```shell
+```java
 rm .git
 
 git init

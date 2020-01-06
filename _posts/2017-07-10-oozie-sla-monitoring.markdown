@@ -126,7 +126,7 @@ for new workflow schema i.e. xmlns="uri:oozie:workflow:0.5"  ===> SLA schema ver
 
 If you are using workflow version < 0.5 and sla schema version 0.2, you will get below error
 
-```shell
+```java
 Error: E0701 : E0701: XML schema error, cvc-complex-type.2.4.a: Invalid content was found starting with element 'sla:info'. One of '{WC["uri:oozie:sla:0.1"]}' is expected.
 ```
 
@@ -180,7 +180,7 @@ To check schema for SLA 0.1 and 0.2, Please check here https://oozie.apache.org/
 
 ### Sample job.properties
 
-```shell
+```java
 nameNode=hdfs://localhost:9000
 jobTracker=localhost:8032
 master=local[*]
@@ -218,7 +218,7 @@ The Oozie Web Services API is a HTTP REST JSON API.  All responses are in `UTF-8
 
 To get **calculated** SLA information. Command Line is **deprecated** and will not give expected result. It will only returns sla informations passed in workflow by using below command
 
-```shell
+```java
 oozie sla -filter jobid=<jobID>
 ```
 

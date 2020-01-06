@@ -23,7 +23,7 @@ After sql-cli installation, run
 for successful run, it will show usage of mssql command.
 Else, it may throw this error:
 
-```shell
+```java
 root@SI-VM-207:~# mssql -h
 /usr/bin/env: node: No such file or directory
 ```

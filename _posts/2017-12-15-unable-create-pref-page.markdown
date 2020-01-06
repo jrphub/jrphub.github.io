@@ -17,7 +17,7 @@ Checked .log file in workspace .metadata directory.
 
 After a bit scrolling down, the actual error was this
 
-```shell
+```java
 Caused by: java.lang.NoClassDefFoundError: Could not initialize 
 class com.ibm.icu.text.SimpleDateFormat
 at org.eclipse.jdt.internal.debug.core.JDIDebugOptions.<clinit>
@@ -41,7 +41,7 @@ startActivator(BundleContextImpl.java:764)
 
 **Solution**
 
-```shell
+```java
 sudo add-apt-repository ppa:justinludwig/tzdata
 sudo apt-get update
 ```

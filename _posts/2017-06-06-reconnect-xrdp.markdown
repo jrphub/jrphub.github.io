@@ -9,7 +9,7 @@ The main drawback with the standard package is that each time you perform a remo
 
 You can check xrdp configuration file /etc/xrdp/xrdp.ini
 
-```shell
+```java
 [xrdp1] name=sesman-Xvnc
 
 lib=libvnc.so
@@ -33,7 +33,7 @@ So, to connect to the existing session you have two options
 
 Change the xrdp.ini file as follows
 
-```shell
+```java
 [xrdp1] name=sesman-Xvnc
 
 lib=libvnc.so
@@ -49,7 +49,7 @@ port=5910
 
 Or
 
-```shell
+```java
 [xrdp1] name=sesman-Xvnc
 
 lib=libvnc.so
