@@ -9,7 +9,7 @@ While running Java program using command line/server, I always got confused abou
 
 Now if you use
 
-{% highlight shell %}
+{% highlight java %}
 
 java -cp /path/to/resources -jar app.jar
 
@@ -31,7 +31,7 @@ if you are not providing any -cp option, java checks System's CLASSPATH and uses
 
 If there is no envrionment variable CLASSPATH set, then it checks the current directory
 
-{% highlight shell %}
+{% highlight java %}
 
 java -cp . package.main-classname
 
@@ -39,7 +39,7 @@ java -cp . package.main-classname
 
 Any arguments provided after the main class name will be considered as program arguments
 
-{% highlight shell %}
+{% highlight java %}
 
 java -cp /path/to/all/resources package.main-classname arg1 arg2 arg3
 
@@ -47,7 +47,7 @@ java -cp /path/to/all/resources package.main-classname arg1 arg2 arg3
 
 You can pass JVM arguments before the main class and after -cp option with -D as prefix
 
-{% highlight shell %}
+{% highlight java %}
 
 java -cp /path/to/resources -Dkey=value package.main-classname arg1 arg2
 
