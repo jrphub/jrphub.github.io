@@ -2,7 +2,6 @@
 layout: default
 comments: true
 ---
-{% include read_time.html %}
 <article class="post-container post-container--single">
   <header class="post-header">
     <div class="post-meta">
@@ -13,6 +12,7 @@ comments: true
       {% if page.categories.size > 0 %}
       &#8226; <span class="post-meta__tags">Category : {% for category in page.categories %}<a href="{{ site.baseurl }}/categories/#{{ category }}">{{ category }}</a> {% endfor %}</span>
       {% endif %}
+      &#8226; <span class="post-meta__tags">Reading Time : <span style="color:red"> {{ page.reading_time }}</span></span>
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>

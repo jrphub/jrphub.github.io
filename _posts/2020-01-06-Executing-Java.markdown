@@ -3,6 +3,7 @@ title:  "29 - Executing Java Program"
 date:   2020-01-06 09:11:53
 categories: [Java]
 tags: [java]
+reading_time: 1 min
 ---
 
 While running Java program using command line/server, I always got confused about using -jar option and -cp option. We bundle the application in jar file using maven/gradle or any building tool. Now there may some resource files which should be provided from outside of the application. This is very common and ideal practice.
