@@ -9,17 +9,17 @@ While running Java program using command line/server, I always got confused abou
 
 Now if you use
 
-```shell
+{% highlight shell %}
 java -cp /path/to/resources -jar app.jar
-```
+{% endhighlight %}
 
 Java won't read classpath resources and will look for classpath mentioned in app.jar manifest file.
 
 So, in such case, 
 
-```shell
+{% highlight shell %}
 java -cp /path/to/resources:/path/to/jar package.main-classname
-```
+{% endhighlight %}
 
 Now, Java will search for the jar file and resources in classpath (separated by ; in windows and : in unix).
 
@@ -27,21 +27,21 @@ if you are not providing any -cp option, java checks System's CLASSPATH and uses
 
 If there is no envrionment variable CLASSPATH set, then it checks the current directory
 
-```
+{% highlight shell %}
 java -cp . package.main-classname
-```
+{% endhighlight %}
 
 Any arguments provided after the main class name will be considered as program arguments
 
-```shell
+{% highlight shell %}
 java -cp /path/to/all/resources package.main-classname arg1 arg2 arg3
-```
+{% endhighlight %}
 
 You can pass JVM arguments before the main class and after -cp option with -D as prefix
 
-```shell
+{% highlight shell %}
 java -cp /path/to/resources -Dkey=value package.main-classname arg1 arg2
-```
+{% endhighlight %}
 
 
 
