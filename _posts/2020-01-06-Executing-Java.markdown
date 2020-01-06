@@ -19,7 +19,7 @@ Java won't read classpath resources and will look for classpath mentioned in app
 
 So, in such case, 
 
-{% highlight shell %}
+{% highlight java %}
 
 java -cp /path/to/resources:/path/to/jar package.main-classname
 
