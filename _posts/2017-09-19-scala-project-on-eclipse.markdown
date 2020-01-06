@@ -42,7 +42,7 @@ Follow the instruction mentioned here() http://www.scala-sbt.org/0.13/docs/Insta
 
 For ubuntu, 
 
-```shell
+```java
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 sudo apt-get update
@@ -53,7 +53,7 @@ sudo apt-get install sbt
 
 1. We are creating "SimpleApp" Project. To do so, run below command
 
-   ```shell
+   ```java
    jrp@iamjrp:~$ mkdir /home/jrp/workspace_1/SimpleApp
    jrp@iamjrp:~$ cd /home/jrp/workspace_1/SimpleApp
    jrp@iamjrp:~/workspace_1/SimpleApp$ mkdir -p src/{main,test}/{java,resources,scala}
@@ -102,7 +102,7 @@ sudo apt-get install sbt
 
 3. Go to HOME directory and run below commands
 
-   ```shell
+   ```java
    jrp@iamjrp:~$ cd
    jrp@iamjrp:~$ cd .sbt
    jrp@iamjrp:~/.sbt$ ls
@@ -177,7 +177,7 @@ To run through terminal
 
 1. Go to project directory in terminal and run "sbt" like this
 
-   ```shell
+   ```java
    jrp@iamjrp:~/workspace_1/SimpleApp$ sbt package
    [warn] Executing in batch mode.
    [warn]   For better performance, hit [ENTER] to switch to interactive mode, or
@@ -190,7 +190,7 @@ To run through terminal
 
 2. let's run the application
 
-   ```shell
+   ```java
    jrp@iamjrp:~/workspace_1/SimpleApp$ sbt run
    [warn] Executing in batch mode.
    [warn]   For better performance, hit [ENTER] to switch to interactive mode, or
@@ -215,7 +215,7 @@ To run through terminal
 To submit the application
 
 
-   ```shell
+   ```java
 
 cd $SPARK_HOME/bin
 ./spark-submit --class "com.spark.practice.MainApp" --master local[4] /home/jrp/workspace_1/SimpleApp/target/scala-2.11/simpleapp_2.11-1.0.jar
