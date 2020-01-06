@@ -3,6 +3,7 @@ title:  "19 - Running Scala Project in Eclipse IDE"
 date:   2017-09-19 11:30:23
 categories: [Scala]
 tags: [eclipse]
+reading_time: 3 min
 ---
 Two ways
 

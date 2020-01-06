@@ -3,6 +3,7 @@ title:  "04 - Singleton Design Pattern in Java"
 date:   2016-11-11 11:30:23
 categories: [Java]
 tags: [programming]
+reading_time: 5 min
 ---
 Singleton is simply a class which is instatiated once per JVM initialisation.There are many ways to achieve it.
 

@@ -3,6 +3,7 @@ title:  "01 - Full image background in CSS3"
 date:   2016-08-15 11:30:23
 categories: [Development]
 tags: [programming]
+reading_time: 2 min
 ---
 While setting background image for one of my websites, I was trying to set a background having following characteristics:
 

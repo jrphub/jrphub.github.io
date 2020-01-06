@@ -3,6 +3,7 @@ title:  "26 - Saving cost while working on EC2 and Cloudera Manager"
 date:   2018-04-01 11:30:23
 categories: [AWS]
 tags: [cloudera]
+reading_time: 1 min
 ---
 I have set up one AWS EC2 cluster of 5 instances (us-east-2 region, EBS Storage Type) of m4.xlarge type i.e. with 4 CPU and 16GB RAM each. These are Ubuntu 16.04 LTS Xenial instances which comes with free-tier usage.
 

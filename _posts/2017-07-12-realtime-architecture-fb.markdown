@@ -3,6 +3,7 @@ title:  "16 - Realtime architecture of Facebook"
 date:   2017-07-12 11:30:23
 categories: [Architecture]
 tags: [others]
+reading_time: 1 min
 ---
 ![image](http://78.media.tumblr.com/6c137a2cd0011fc190019e869dfd712d/tumblr_inline_oa7oikev7o1uq2h70_540.png)
 

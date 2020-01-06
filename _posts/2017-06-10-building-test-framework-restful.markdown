@@ -3,6 +3,7 @@ title:  "14 - Building Test framework for Restful Web Application"
 date:   2017-06-10 11:30:23
 categories: [Development]
 tags: [rest-ws]
+reading_time: 10 min
 ---
 
 **To be discussed**
@@ -409,7 +410,7 @@ To mock external sources, add this in your pom.xml
 	<version>1.10.19</version>
 </dependency>
 ```
-   			
+
 
 You need to use surefire plugin for running your unit test case.
 

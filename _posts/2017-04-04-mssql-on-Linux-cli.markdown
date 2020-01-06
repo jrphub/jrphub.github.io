@@ -3,6 +3,7 @@ title:  "11 - MSSQL on Linux (Ubuntu)"
 date:   2017-04-04 11:30:23
 categories: [Development]
 tags: [sql]
+reading_time: 1 min
 ---
 
 [Sql-Cli](https://www.npmjs.com/package/sql-cli) is command line interface for SQL Server.

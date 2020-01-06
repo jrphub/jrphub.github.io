@@ -3,6 +3,7 @@ title:  "24 - Start a blog with Github-Pages"
 date:   2017-12-17 11:30:23
 categories: [Others]
 tags: [git]
+reading_time: 1 min
 ---
 **Theme** : Jekyll-uno ([https://github.com/joshgerdes/jekyll-uno](#))
 

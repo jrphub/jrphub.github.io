@@ -3,6 +3,7 @@ title:  "28 - Blogging on the go"
 date:   2019-12-28 11:30:23
 categories: [Others]
 tags: [others]
+reading_time: 1 min
 ---
 
 I have hosted this blog on github pages, which is a static site generator. I am not fond of using blogging platform like wordpress, medium etc. as I don't have much control on my blog files. Moreover, if someday I want to change to new blogging platform, I may lose my articles. So, being a software developer and a git-fan, I chose github pages to host my blog. The problem with static site generator is , you can't write and publish your articles from mobile. I always login to my laptop and then write markdown files and the do git push.

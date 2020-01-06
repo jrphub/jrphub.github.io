@@ -3,6 +3,7 @@ title:  "12 - Installing and configuring Postgres"
 date:   2017-05-10 11:30:23
 categories: [Development]
 tags: [sql]
+reading_time: 2 min
 ---
 To install postgres on linux machine,
 

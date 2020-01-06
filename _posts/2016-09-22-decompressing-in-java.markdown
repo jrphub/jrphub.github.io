@@ -3,6 +3,7 @@ title:  "02 - Decompressing in Java"
 date:   2016-09-22 11:30:23
 categories: [Java]
 tags: [programming]
+reading_time: 3 min
 ---
 **Scenario**: There are one or multiple zip files present in a directory. The objective is to select only zip files, decompress those and put it in another directory.
 

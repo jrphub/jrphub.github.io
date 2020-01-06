@@ -3,6 +3,7 @@ title:  "25 - Different modes of Cloudera Installation"
 date:   2018-03-08 11:30:23
 categories: [Hadoop]
 tags: [cloudera]
+reading_time: 2 min
 ---
 There are three main installation paths for creating a new Cloudera Manager deployment:
 

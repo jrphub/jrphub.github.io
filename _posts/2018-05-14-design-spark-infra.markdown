@@ -3,6 +3,7 @@ title:  "27 - Designing Infrastructure Config for Spark Application"
 date:   2018-05-14 11:30:23
 categories: [Hadoop]
 tags: [spark]
+reading_time: 5 min
 ---
 When we get hardware for our Spark project, we always wonder, what should be the ideal configuration as per the hardware provided. To have better performance, there are two most important factor, we should consider.
 

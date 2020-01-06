@@ -3,6 +3,7 @@ title:  "18 - Working with multiple versions of Java in ubuntu 16.04"
 date:   2017-09-19 11:30:23
 categories: [Development]
 tags: [java]
+reading_time: 2 min
 ---
 Current Java version: 
 

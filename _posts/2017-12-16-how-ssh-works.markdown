@@ -3,6 +3,7 @@ title:  "23 - How SSH Works!"
 date:   2017-12-16 11:30:23
 categories: [Unix]
 tags: [ssh]
+reading_time: 5 min
 ---
 Secure Shell (SSH) provides **Encryption** and **Authentication** features, which enhance security.  Other two important features are
 1. SSH Tunneling
@@ -76,13 +77,13 @@ The client authentication happens over this encrypted channel. There are multipl
 		**Password Authentication**: (Most commonly used) - Similar to login to local user using the correct password. The password transmitted by the client to the server is encrypted through the session symmetric key(which only the server and the client knows)
 
 **Public Key Authentication**: (Strongest)
-	1. Client needs to create private (id_rsa) and public (id_rsa.pub) key by doing ssh-keygen
-				![ssh-keygen](https://i.imgur.com/YGu1O8z.png)
-	2. Share public key with the server(s) by adding the content of id_rsa.pub file to the **server side authorized_keys** file. This authorized_key file should be present in .ssh directory of server.
-	3. Server on receiving public key authentication request , will first generate a random 256 bit string as a challenge for the client, and encrypt it with the client public key, which is inside the authorized_keys file.
-	4. The client on receiving the challenge, will decrypt it with the private key(id_rsa).
-	5. Client combine challenge string with session key (which was previously negotiated and is being used for symmetric encryption.) and will generate md5 hash value and sent to the server.
-	6. Server will generate its own md5 hash value using challenge String and session key and compare the value with the value sent by the client. If it matches, client authentication succeeds.
+​	1. Client needs to create private (id_rsa) and public (id_rsa.pub) key by doing ssh-keygen
+​				![ssh-keygen](https://i.imgur.com/YGu1O8z.png)
+​	2. Share public key with the server(s) by adding the content of id_rsa.pub file to the **server side authorized_keys** file. This authorized_key file should be present in .ssh directory of server.
+​	3. Server on receiving public key authentication request , will first generate a random 256 bit string as a challenge for the client, and encrypt it with the client public key, which is inside the authorized_keys file.
+​	4. The client on receiving the challenge, will decrypt it with the private key(id_rsa).
+​	5. Client combine challenge string with session key (which was previously negotiated and is being used for symmetric encryption.) and will generate md5 hash value and sent to the server.
+​	6. Server will generate its own md5 hash value using challenge String and session key and compare the value with the value sent by the client. If it matches, client authentication succeeds.
 
 
 **SSH protocol version 2**

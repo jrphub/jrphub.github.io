@@ -3,6 +3,7 @@ title:  "13 - Remote Connection : To reconnect existing session using xrdp"
 date:   2017-06-06 11:30:23
 categories: [Others]
 tags: [others]
+reading_time: 2 min
 ---
 The main drawback with the standard package is that each time you perform a remote desktop to your xrdp server; a new session was created.
 

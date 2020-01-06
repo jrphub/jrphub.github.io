@@ -3,6 +3,7 @@ title:  "08 - Learning Git"
 date:   2017-01-26 11:30:23
 categories: [Development]
 tags: [git]
+reading_time: 3 min
 ---
 Git is a Distributed Version Controlling System (DVCS). it believes work-local, commit-often, publish-when-you-can methodology. It is primarily written in C.
 

@@ -3,6 +3,7 @@ title:  "03 - Running one thread after another in Java"
 date:   2016-10-10 11:30:23
 categories: [Java]
 tags: [programming]
+reading_time: 3 min
 ---
 The below is a simple code which shows how to make one thread wait till first thread completes its execution
 

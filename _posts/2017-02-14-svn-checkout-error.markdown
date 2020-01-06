@@ -3,6 +3,7 @@ title:  "09 - SVN Checkout Error"
 date:   2017-02-14 11:30:23
 categories: [Development]
 tags: [svn]
+reading_time: 1 min
 ---
 While working on **Ubuntu Mate + Eclipse Mars + Subversive SVN Team Provider**, I need to commit a few modified files using SVN client in Eclipse. I am using **SVN Kit v1.8.12.10533** as SVN client to manage my code in eclipse. Though all functionality except "Commit" is working perfectly, to commit changes, I use SVN command line. (To know more on SVN command line, you can refer my other post on SVN [here](http://jumbo.iamjrp.com/post/148217764265/subversion-on-command-line))
 

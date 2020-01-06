@@ -3,6 +3,7 @@ title:  "05 - String to Date Conversion in Java"
 date:   2016-12-05 11:30:23
 categories: [Java]
 tags: [programming]
+reading_time: 1 min
 ---
 Program :
 

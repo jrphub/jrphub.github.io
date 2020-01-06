@@ -3,6 +3,7 @@ title:  "21 - Eclipse Mars.2 Release (4.5.2) hangs in Ubuntu 16.04 LTS"
 date:   2017-12-15 11:30:23
 categories: [Development]
 tags: [eclipse]
+reading_time: 1 min
 ---
 While creating a project, eclipse hangs. But the project directory get created. After killing the eclipse and restart the eclipse, the prject is seen in workspace, but any operation on eclipse hangs. 
 

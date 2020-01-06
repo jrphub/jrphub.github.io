@@ -3,6 +3,7 @@ title:  "10 - Subversion on Command Line"
 date:   2017-03-22 11:30:23
 categories: [Development]
 tags: [svn]
+reading_time: 5 min
 ---
 Subversion is an open source version control system. Founded in 2000 by CollabNet, Inc. Subversion is developed as a project of the **Apache** Software Foundation (http://subversion.apache.org/)
 
@@ -53,7 +54,7 @@ To commit specific files:
 
 **Resolve** - After "svn update", the command "svn status" shows the conflicted files with status code " C". These files need to be resolved before committing.
  The conflicted files look like this:
- 
+
 ![conflicted file](https://i.imgur.com/h4P5um4.png)
 
 Resolve the conflict, remove ASCII art notations, when you are ready, run 

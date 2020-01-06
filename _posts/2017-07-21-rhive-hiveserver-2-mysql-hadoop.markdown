@@ -3,6 +3,7 @@ title:  "17 - Configuring Hadoop cluster(Pseudo-distributed, single machine) for
 date:   2017-07-21 11:30:23
 categories: [Hadoop]
 tags: [hive]
+reading_time: 5 min
 ---
 Assuming machine "R" wants to connect to machine "H" using Rhive.
 
