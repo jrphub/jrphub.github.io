@@ -1,6 +1,6 @@
 ---
 title:  "28 - Blogging on the go"
-date:   2018-12-28 11:30:23
+date:   2019-12-28 11:30:23
 categories: [Others]
 tags: [others]
 ---
