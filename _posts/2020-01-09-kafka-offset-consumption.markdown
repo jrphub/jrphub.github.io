@@ -14,7 +14,7 @@ This is decided by the configuration called "**auto.offset.reset**".
 
 
 
-![kafka-consumer-offset](/home/jrp/Downloads/autodraw 09_01_2020 (2).png)When the consumer is new and doesn't have any offset, it will start reading only new messages that will come to a topic-partition. This is default behaviour i.e. **latest**
+![kafka-consumer-offset](https://i.imgur.com/RIdNfbf.png)When the consumer is new and doesn't have any offset, it will start reading only new messages that will come to a topic-partition. This is default behaviour i.e. **latest**
 
 That means, from diagram above, it will start reading from m7 i.e. offset 06
 
