@@ -1,9 +1,9 @@
 ---
 title:  "30 - Offset Management by Kafka"
-date:   2020-01-06 09:11:53
+date:   2020-01-09 10:01
 categories: [Hadoop]
 tags: [kafka]
-reading_time: 1 min
+reading_time: 2 min
 ---
 
 In this post we will discuss about, 
