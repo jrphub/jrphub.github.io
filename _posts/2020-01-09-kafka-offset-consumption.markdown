@@ -18,11 +18,11 @@ This is decided by the configuration called "**auto.offset.reset**".
 
 That means, from diagram above, it will start reading from m7 i.e. offset 06
 
-Kafka holds the message in the topic-partition for a certain retention period (default : 7 days)
-
 If you have set it to "**earliest**", then the consumer will read from m1 i.e offset 00 in the above diagram.
 
 If you have set it to "**None**", then it will wait for your input, from which offset it should start reading. In this case, the offset management is at the application side.
+
+Kafka holds the message in the topic-partition for a certain retention period (default : 7 days)
 
 Now let's discuss a scenario...
 
