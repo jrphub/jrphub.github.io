@@ -6,7 +6,7 @@ tags: [java]
 reading_time: 1 min
 ---
 
-While running Java program using command line/server, I always got confused about using -jar option and -cp option. We bundle the application in jar file using maven/gradle or any building tool. Now there may some resource files which should be provided from outside of the application. This is very common and ideal practice.
+While running Java program using command line/server, I always got confused about using -jar option and -cp option. We bundle the application in jar file using maven/gradle or any building tool. Now there may be some resource files which should be provided from outside of the application. This is very common and ideal practice.
 
 Now if you use
 

@@ -14,7 +14,7 @@ This helps in merging a specific commit from one branch to current branch
 git cherry-pick <commit-hash>
 ```
 
-Where commit-has is taken from "git log"‌
+Where *commit-hash* is taken from ```git log```
 
 **2. Changing last commit**‌
 
@@ -24,7 +24,7 @@ To change last commit message
 git commit --amend
 ```
 
-This will open in vi editor, you can change the commit message and then "git push"‌
+This will open in vi editor, you can change the commit message and then ```git push```
 
 **3. Changing old commit messages**
 
@@ -34,7 +34,7 @@ git rebase -i HEAD~N
 
 where N is the last N no. of commits
 
-you can see all commits using "git log" (console based) or "gitk" (UI)‌
+you can see all commits using ```git log``` (console based) or ```gitk``` (UI)‌
 
 **4. To sync local repository with remote repository**
 
@@ -45,14 +45,14 @@ origin : Central or remote repository name
 ```
 
 ```bash
-master : a local branch‌
+master : a local branch
 ```
 
 ```bash
 origin/master : A remote branch (which is a local copy of the branch named "master" on the remote named "origin"
 ```
 
-Now let's say, you are in **develop** branch, which is ahead of remote develop branch. You may push the code to remote branch, but in case you are not interested to push the local changes and make your local branch in sync with remote develop i.e **origin/develop** branch. 
+Now let's say, you are in **develop** branch, which is ahead of **remote develop** branch. You may push the code to remote branch, but in case you are not interested to push the local changes and make your local branch in sync with remote develop i.e **origin/develop** branch. 
 
 To do this
 
@@ -63,7 +63,7 @@ git clean -f -d
 git status
 ```
 
-git fetch --prune or git remote prune do the same thing: deletes the refs to branches that don't exist on the remote.
+```git fetch --prune ```or ```git remote prune``` do the same thing: deletes the refs to branches that don't exist on the remote.
 
 `git fetch --prune origin ` will connect to the remote origin and fetch the latest remote state before pruning.
 

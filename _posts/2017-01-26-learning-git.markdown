@@ -50,10 +50,6 @@ You are ready to make changes now.
 
 **Overal Flow**
 
-![flow](https://s32.postimg.org/a4d12yl2d/git_basic.png)
-
-**Let's know a bit more about the flow ...**
-
 ![Git flow](https://i.imgur.com/WzIOB6b.png "Git flow")
 
 So you can see, there are **FOUR** areas - workspace (work area), index (stage area), local repository (committed area), remote repository (github repo)
@@ -137,8 +133,6 @@ To list all local and remote branches:
 
     git branch -a
 
-![enter image description here](https://s32.postimg.org/e768ngk79/git_branch.png "git branch")
-
  Remote branches are prefixed by “remotes” and are shown in red.
 
  To delete a branch
@@ -166,7 +160,7 @@ This allows developers to test their branch changes safely in isolation on their
     git rebase <source branch name>
     git rebase <source branch name> <destination branch name>
 
-![enter image description here](https://cdn-images-1.medium.com/max/1200/1*FNaZp740nmp8wz851BqcAg.png "git-rebase")
+![enter image description here](https://i.imgur.com/bZZzfN6.png "git-rebase")
 
 **Confused between "git rebase" and "git merge"?**
 
@@ -205,7 +199,7 @@ You can rebase the feature branch onto master branch using the following command
 
 This moves the entire feature branch to begin on the tip of the master branch, effectively incorporating all of the new commits in master. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new commits for each commit in the original branch, as shown below:
 
-![enter image description here](https://www.atlassian.com/git/images/tutorials/advanced/merging-vs-rebasing/03.svg "git rebase")
+![Merging-vs-Rebasing](https://i.imgur.com/Yz1ucBM.png "Merging-vs-Rebasing")
 
 Though you get cleaner project history, you can’t see when upstream changes were incorporated into the feature. So, before you run git rebase, always ask yourself, “Is anyone else looking at this branch?” If the answer is yes, take your hands off the keyboard and start thinking about a non-destructive way to make your changes (e.g., the git revert command). Otherwise, you’re safe to re-write history as much as you like.
 
@@ -252,7 +246,7 @@ Best Practice is:
 **Working with remote repository**
 Unlike SVN's central repository model, Git follows "Collaboration model", which gives every developer their own copy of the repository.
 For example, the following diagram shows two remote connections from your repo into the central repo and another developer’s repo. Instead of referencing them by their full URLs, you can pass the origin and john shortcuts to other Git commands.
-![enter image description here](https://www.atlassian.com/git/images/tutorials/collaborating/syncing/01.svg "git-remote")
+![git-remote](https://i.imgur.com/1GlNz8z.png "git-remote")
 
 To get full address of your configured remote:
 
