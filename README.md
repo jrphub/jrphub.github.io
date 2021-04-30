@@ -1,1 +1,1 @@
-My Blog : http://www.iamjrp.com/
+My Blog : https://www.mejrp.com/

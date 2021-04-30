@@ -1,5 +1,5 @@
 # Site settings
-title: iamjrp
+title: mejrp
 description: 'A Thinker, Innovator, Enthusiastic Software Developer, Amateur sketch maker, Recreational Singer, Thought leader and Sometimes clumsy. :-)'
 url: 'https://jrphub.github.io/'
 baseurl: ''
@@ -8,7 +8,7 @@ disqus_shortname: 'iamjrp'
 
 author:
   name: 'Jyoti Ranjan Pattnaik'
-  email: mailme@iamjrp.com
+  email: jyotiranjanpattnaik@gmail.com
 # twitter_username: jrp
   facebook_username: jrpattnaik
   github_username:  jrphub
