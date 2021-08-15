@@ -32,12 +32,15 @@ These commands store your preferences in a file named .gitconfig inside your hom
  2. Locally
      From a command prompt, change directories to an empty folder or an existing project directory that you want to put under version control. Then, initialize the directory as a Git repository by typing the following
        commands:
-
+      
       git init
+      
       git commit -m "first commit"
+      
       git remote add origin https://github.com/username/reponame.git
+      
       git push -u origin master
-
+    
 If you want to fetch a Github repository to your local :
 
  - Go to repository page and click on "Clone or Download"
